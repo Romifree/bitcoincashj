@@ -16,9 +16,9 @@
 
 package wallettemplate;
 
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.MnemonicCode;
-import org.bitcoinj.wallet.DeterministicSeed;
+import org.bitcoincashj.core.Utils;
+import org.bitcoincashj.crypto.MnemonicCode;
+import org.bitcoincashj.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;
@@ -28,13 +28,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
-import org.bitcoinj.walletfx.application.WalletApplication;
-import org.bitcoinj.walletfx.overlay.OverlayController;
-import org.bitcoinj.walletfx.overlay.OverlayableStackPaneController;
+import org.bitcoincashj.walletfx.application.WalletApplication;
+import org.bitcoincashj.walletfx.overlay.OverlayController;
+import org.bitcoincashj.walletfx.overlay.OverlayableStackPaneController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.bitcoinj.walletfx.utils.TextFieldValidator;
+import org.bitcoincashj.walletfx.utils.TextFieldValidator;
 
 import javax.annotation.Nullable;
 import java.time.Instant;
@@ -45,10 +45,10 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static javafx.beans.binding.Bindings.*;
-import static org.bitcoinj.walletfx.utils.GuiUtils.checkGuiThread;
-import static org.bitcoinj.walletfx.utils.GuiUtils.informationalAlert;
-import static org.bitcoinj.walletfx.utils.WTUtils.didThrow;
-import static org.bitcoinj.walletfx.utils.WTUtils.unchecked;
+import static org.bitcoincashj.walletfx.utils.GuiUtils.checkGuiThread;
+import static org.bitcoincashj.walletfx.utils.GuiUtils.informationalAlert;
+import static org.bitcoincashj.walletfx.utils.WTUtils.didThrow;
+import static org.bitcoincashj.walletfx.utils.WTUtils.unchecked;
 
 public class WalletSettingsController implements OverlayController<WalletSettingsController> {
     private static final Logger log = LoggerFactory.getLogger(WalletSettingsController.class);
@@ -182,7 +182,7 @@ public class WalletSettingsController implements OverlayController<WalletSetting
 
         long birthday = datePicker.getValue().atStartOfDay().toEpochSecond(ZoneOffset.UTC);
         DeterministicSeed seed = new DeterministicSeed(Splitter.on(' ').splitToList(wordsArea.getText()), null, "", birthday);
-        // Shut down bitcoinj and restart it with the new seed.
+        // Shut down bitcoincashj and restart it with the new seed.
         app.walletAppKit().addListener(new Service.Listener() {
             @Override
             public void terminated(Service.State from) {

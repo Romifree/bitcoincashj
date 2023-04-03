@@ -1,4 +1,4 @@
-# configuration for https://travis-ci.org/bitcoinj/bitcoinj
+# configuration for https://travis-ci.org/bitcoincashj/bitcoincashj
 sudo: false
 dist: bionic
 language: java
@@ -18,5 +18,5 @@ script:
 
 notifications:
   irc:
-    channels: "irc.freenode.net#bitcoinj"
+    channels: "irc.freenode.net#bitcoincashj"
     skip_join: true

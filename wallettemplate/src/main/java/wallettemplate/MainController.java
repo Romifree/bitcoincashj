@@ -22,9 +22,9 @@ import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.Pane;
-import org.bitcoinj.core.listeners.DownloadProgressTracker;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.utils.MonetaryFormat;
+import org.bitcoincashj.core.listeners.DownloadProgressTracker;
+import org.bitcoincashj.core.Coin;
+import org.bitcoincashj.utils.MonetaryFormat;
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
@@ -33,15 +33,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.util.Duration;
-import org.bitcoinj.walletfx.application.MainWindowController;
-import org.bitcoinj.walletfx.application.WalletApplication;
-import org.bitcoinj.walletfx.utils.GuiUtils;
-import org.bitcoinj.walletfx.utils.TextFieldValidator;
-import org.bitcoinj.walletfx.controls.ClickableBitcoinAddress;
-import org.bitcoinj.walletfx.controls.NotificationBarPane;
-import org.bitcoinj.walletfx.utils.BitcoinUIModel;
-import org.bitcoinj.walletfx.utils.easing.EasingMode;
-import org.bitcoinj.walletfx.utils.easing.ElasticInterpolator;
+import org.bitcoincashj.walletfx.application.MainWindowController;
+import org.bitcoincashj.walletfx.application.WalletApplication;
+import org.bitcoincashj.walletfx.utils.GuiUtils;
+import org.bitcoincashj.walletfx.utils.TextFieldValidator;
+import org.bitcoincashj.walletfx.controls.ClickableBitcoinAddress;
+import org.bitcoincashj.walletfx.controls.NotificationBarPane;
+import org.bitcoincashj.walletfx.utils.BitcoinUIModel;
+import org.bitcoincashj.walletfx.utils.easing.EasingMode;
+import org.bitcoincashj.walletfx.utils.easing.ElasticInterpolator;
 
 /**
  * Gets created auto-magically by FXMLLoader via reflection. The widget fields are set to the GUI controls they're named

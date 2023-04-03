@@ -17,7 +17,7 @@
 package wallettemplate;
 
 import javafx.application.Platform;
-import org.bitcoinj.crypto.KeyCrypterScrypt;
+import org.bitcoincashj.crypto.KeyCrypterScrypt;
 import com.google.common.primitives.Longs;
 import com.google.protobuf.ByteString;
 import javafx.beans.property.ReadOnlyObjectProperty;
@@ -30,18 +30,18 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import org.bitcoinj.walletfx.application.WalletApplication;
-import org.bitcoinj.walletfx.overlay.OverlayController;
-import org.bitcoinj.walletfx.overlay.OverlayableStackPaneController;
+import org.bitcoincashj.walletfx.application.WalletApplication;
+import org.bitcoincashj.walletfx.overlay.OverlayController;
+import org.bitcoincashj.walletfx.overlay.OverlayableStackPaneController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.bitcoinj.walletfx.utils.KeyDerivationTasks;
+import org.bitcoincashj.walletfx.utils.KeyDerivationTasks;
 
 import java.time.Duration;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static org.bitcoinj.walletfx.utils.GuiUtils.*;
+import static org.bitcoincashj.walletfx.utils.GuiUtils.*;
 
 /**
  * User interface for entering a password on demand, e.g. to send money. Also used when encrypting a wallet. Shows a

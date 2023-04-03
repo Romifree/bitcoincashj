@@ -17,9 +17,9 @@
 package wallettemplate;
 
 import javafx.scene.layout.HBox;
-import org.bitcoinj.core.*;
-import org.bitcoinj.wallet.SendRequest;
-import org.bitcoinj.wallet.Wallet;
+import org.bitcoincashj.core.*;
+import org.bitcoincashj.wallet.SendRequest;
+import org.bitcoincashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -29,16 +29,16 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import org.bitcoinj.walletfx.application.WalletApplication;
-import org.bitcoinj.walletfx.overlay.OverlayController;
-import org.bitcoinj.walletfx.overlay.OverlayableStackPaneController;
+import org.bitcoincashj.walletfx.application.WalletApplication;
+import org.bitcoincashj.walletfx.overlay.OverlayController;
+import org.bitcoincashj.walletfx.overlay.OverlayableStackPaneController;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.bitcoinj.walletfx.controls.BitcoinAddressValidator;
-import org.bitcoinj.walletfx.utils.TextFieldValidator;
-import org.bitcoinj.walletfx.utils.WTUtils;
+import org.bitcoincashj.walletfx.controls.BitcoinAddressValidator;
+import org.bitcoincashj.walletfx.utils.TextFieldValidator;
+import org.bitcoincashj.walletfx.utils.WTUtils;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.bitcoinj.walletfx.utils.GuiUtils.*;
+import static org.bitcoincashj.walletfx.utils.GuiUtils.*;
 
 import javax.annotation.Nullable;
 

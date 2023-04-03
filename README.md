@@ -4,17 +4,17 @@ http://4hsesnr6mjb4qrflgf5gezjaszzoqnnisin7ywzbsv6pgcxysiaq.b32.i2p/pokkst/bitco
 
 To access, please install I2P: https://geti2p.net and configure your browser's proxy settings to use an HTTP proxy at 127.0.0.1:4444.
 
-This Java library for Bitcoin Cash is a fork of bitcoinj. Please read the feature list below for all the features I've implemented since becoming the maintainer.
+This Java library for Bitcoin Cash is a fork of bitcoincashj. Please read the feature list below for all the features I've implemented since becoming the maintainer.
 
 Please consider donating: bitcoincash:qptnypuugy29lttleggl7l0vpls0vg295q9nsavw6g
 
 ### Welcome to bitcoincashj
 
-The bitcoincashj library is a Java implementation of the Bitcoin Cash (BCH) protocol. This library is a fork of Mike Hearn's original bitcoinj library aimed at supporting the Bitcoin Cash eco-system.
+The bitcoincashj library is a Java implementation of the Bitcoin Cash (BCH) protocol. This library is a fork of Mike Hearn's original bitcoincashj library aimed at supporting the Bitcoin Cash eco-system.
 
-This bitcoincashj is a fork of ProtocolCash's, which is a fork of the original bitcoincashj, which forked from Mike Hearn's original bitcoinj. Confusing, right?
+This bitcoincashj is a fork of ProtocolCash's, which is a fork of the original bitcoincashj, which forked from Mike Hearn's original bitcoincashj. Confusing, right?
 
-This fork of bitcoincashj has many changes and fixes since the original bitcoincashj (bitcoinj.cash) library, like:
+This fork of bitcoincashj has many changes and fixes since the original bitcoincashj (bitcoincashj.cash) library, like:
 
 - CTOR support
 - 32MB block support
@@ -73,11 +73,11 @@ Alternatively, just import the project using your IDE. [IntelliJ](http://www.jet
 
 ### Building and Using the Wallet Tool
 
-The **bitcoinj** `tools` subproject includes a command-line Wallet Tool (`wallet-tool`) that can be used to create and manage **bitcoinj**-based wallets (both the HD keychain and SPV blockchain state.) Using `wallet-tool` on Bitcoin's test net is a great way to learn about Bitcoin and **bitcoinj**.
+The **bitcoincashj** `tools` subproject includes a command-line Wallet Tool (`wallet-tool`) that can be used to create and manage **bitcoincashj**-based wallets (both the HD keychain and SPV blockchain state.) Using `wallet-tool` on Bitcoin's test net is a great way to learn about Bitcoin and **bitcoincashj**.
 
 To build an executable shell script that runs the command-line Wallet Tool, use:
 ```
-gradle bitcoinj-tools:installDist
+gradle bitcoincashj-tools:installDist
 ```
 
 You can now run the `wallet-tool` without parameters to get help on its operation:
@@ -85,20 +85,20 @@ You can now run the `wallet-tool` without parameters to get help on its operatio
 ./tools/build/install/wallet-tool/bin/wallet-tool
 ```
 
-To create a test net wallet file in `~/bitcoinj/bitcoinj-test.wallet`, you would use:
+To create a test net wallet file in `~/bitcoincashj/bitcoincashj-test.wallet`, you would use:
 ```
-mkdir ~/bitcoinj
-./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoinj/bitcoinj-test.wallet create
-```
-
-To sync the newly created wallet in `~/bitcoinj/bitcoinj-test.wallet` with the test net, you would use:
-```
-./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoinj/bitcoinj-test.wallet sync
+mkdir ~/bitcoincashj
+./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoincashj/bitcoincashj-test.wallet create
 ```
 
-To dump the state of the wallet in `~/bitcoinj/bitcoinj-test.wallet` with the test net, you would use:
+To sync the newly created wallet in `~/bitcoincashj/bitcoincashj-test.wallet` with the test net, you would use:
 ```
-./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoinj/bitcoinj-test.wallet dump
+./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoincashj/bitcoincashj-test.wallet sync
+```
+
+To dump the state of the wallet in `~/bitcoincashj/bitcoincashj-test.wallet` with the test net, you would use:
+```
+./tools/build/install/wallet-tool/bin/wallet-tool --net=TEST --wallet=$HOME/bitcoincashj/bitcoincashj-test.wallet dump
 ```
 
 Note: These instructions are for macOS/Linux, for Windows use the `tools/build/install/wallet-tool/bin/wallet-tool.bat` batch file with the equivalent Windows command-line commands and options.
@@ -109,7 +109,7 @@ These are found in the `examples` module.
 
 ### Where next?
 
-Now you are ready to [follow the tutorial](https://bitcoinj.github.io/getting-started).
+Now you are ready to [follow the tutorial](https://bitcoincashj.github.io/getting-started).
 
 ### Contributing to bitcoincashj
 
