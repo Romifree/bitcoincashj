@@ -1,18 +1,15 @@
-# WARNING
-This repository is no longer maintained. Please see the latest changes here:
-http://4hsesnr6mjb4qrflgf5gezjaszzoqnnisin7ywzbsv6pgcxysiaq.b32.i2p/pokkst/bitcoincashj
-
-To access, please install I2P: https://geti2p.net and configure your browser's proxy settings to use an HTTP proxy at 127.0.0.1:4444.
+### Maintain this to support java based Bitcoin Cash development, e.g. Wallet, eco-system.
+Note: Renamed package etc. to bitcoincashj, to avoid conflict with bitcoin when support both bitcoin and bitcoincash in same wallet.
 
 This Java library for Bitcoin Cash is a fork of bitcoincashj. Please read the feature list below for all the features I've implemented since becoming the maintainer.
 
-Please consider donating: bitcoincash:qptnypuugy29lttleggl7l0vpls0vg295q9nsavw6g
+Please consider donating: bitcoincash:qzv9mjhwjt4hsqdhhsrwu0tsl2m0kc8h0qre8kpk5s
 
 ### Welcome to bitcoincashj
 
 The bitcoincashj library is a Java implementation of the Bitcoin Cash (BCH) protocol. This library is a fork of Mike Hearn's original bitcoincashj library aimed at supporting the Bitcoin Cash eco-system.
 
-This bitcoincashj is a fork of ProtocolCash's, which is a fork of the original bitcoincashj, which forked from Mike Hearn's original bitcoincashj. Confusing, right?
+This bitcoincashj is a fork of pokkst's, which is fork of ProtocolCash's bitcoincashj, which is a fork of the original bitcoincashj, which forked from Mike Hearn's original bitcoincashj. Confusing, right?
 
 This fork of bitcoincashj has many changes and fixes since the original bitcoincashj (bitcoincashj.cash) library, like:
 
